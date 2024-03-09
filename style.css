@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto+Condensed&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Netflix home Page Area Start */
+.main {
+    background-image: url(assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+
+}
+
+nav {
+    max-width: 60vw;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    padding: 8px 16px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    border: 1px solid red;
+    border-radius: 0.25rem;
+    background-color: #ff0000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.65;
+
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Get-started> :nth-child(1) {
+    padding: 5px 30px;
+    font-family: "Martel Sans", sans-serif;
+    font-size: larger;
+    color: aliceblue;
+    font-weight: 700;
+    border: 1px solid rgb(31, 30, 30);
+    background-color: rgb(31, 30, 30);
+    opacity: 0.90;
+}
+
+.Get-started> :nth-child(2) {
+    padding: 5px 25px;
+    font-family: "Martel Sans", sans-serif;
+    font-size: larger;
+    color: aliceblue;
+    font-weight: 700;
+    background-color: #ff0000;
+    border: 1px solid red;
+    cursor: pointer;
+
+}
+
+/* Netflix home Page Area End */
+
+.separation {
+    height: 8px;
+    background-color: gray;
+}
+
+
+/* Section-Area */
+
+.first {
+    height: 80vh;
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: "Martel Sans", sans-serif;
+
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+img {
+    width: 100%;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    top: 61px;
+    right: 1px;
+    width: 480px;
+}
+
+/* Section-Area-End */
+
+/* FAQ-section */
+
+.faq h2 {
+    font-size: 48px;
+    font-family: "Martel Sans", sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+}
+
+.faqbox {
+    display: flex;
+    background-color: rgb(43, 41, 41);
+    padding: 15px 15px;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faq span {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    line-height: normal;
+
+}
+
+.readyto span {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Martel Sans", sans-serif;
+}
+
+/* FAQ-section-End */
+
+/* Media-Queries */
+
+@media screen and (max-width:1024px) {
+    .first {
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .first {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 24px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .Get-started> :nth-child(1) {
+        width: 90%;
+        padding: 0%;
+        font-size: 14px;
+    }
+
+    .Get-started> :nth-child(2) {
+        width: 90%;
+        padding: 0%;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    .secimg img {
+        width: 391px;
+
+    }
+
+    .secimg video {
+        width: 340px;
+        position: absolute;
+        top: 41px;
+        right: 1px;
+    }
+
+    .faq h2 {
+        font-size: 24px;
+    }
+
+    .readyto span {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .first>div :nth-child(1) {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 12px;
+    }
+
+}
+
+/* Media-Queries-End */
